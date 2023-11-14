@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #194c38;
+    height: 75px;
+    padding: 10px;
+}
+
+header .logo h5{
+    font-size: 30px;
+    color: #dbdb1b;
+}
+
+header .info{
+    display: flex;
+}
+
+header img{
+    width: 50px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    margin-left: 10px;
+}
+
+header .left{
+    text-align: end;
+}
+
+header .left .name{
+    font-weight: bold;
+    color: #fff;
+}
+
+header .left .money{
+    font-weight: bold;
+    color: #dbdb1b;
+}
+
+main{
+    height: calc(100vh - 75px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #22674b;
+    color: #fff;
+}
+
+main .board{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .board .resoult{
+    font-size: 70px;
+    font-weight: bold;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .board .resoult img{
+    height: 150px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.55);
+    border-radius: 25px;
+}
+
+main .board .resoult.active{
+    transition: 0.3s;
+    animation: rotate 0.3s ease infinite;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}
+
+main .bet{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .bet .over,
+main .bet .under{
+    font-size: 30px;
+    border: 1px solid #ccc;
+    width: 50%;
+    text-align: center;
+    padding: 50px 10px;
+    background-color: rgba(0,0,0,0.25);
+}
+
+.over h1{
+    color: rgb(242, 122, 146)
+}
+
+.under h1{
+    color: rgb(139, 249, 249);
+}
+
+.over.active h1,
+.under.active h1{
+    transition: 0.1s;
+    animation: win 1s ease infinite alternate;
+    text-shadow: 0px 0px 5px #dbdb1b;
+}
+
+@keyframes win {
+    from{
+        transform: scale(0.8);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+
+main .bet .over:active,
+main .bet .under:active{
+    background-color: rgba(255,255,255,0.5);
+}
+
+main .price{
+    display: flex;
+    justify-content: space-between;
+}
+
+main .price button{
+    flex: 1;
+    font-size: 24px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: rgba(255,255,255,0.5);
+    color: #fff;
+    font-weight: bold;
+}
+
+main .price button:active{
+    background-color: #dbdb1b;
+}
