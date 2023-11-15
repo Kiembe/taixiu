@@ -90,6 +90,11 @@ main .board .resoult.active{
     }
 }
 
+main .brige{
+    background-color: rgba(0,0,0,0.55);
+    padding: 5px;
+}
+
 main .bet{
     display: flex;
     justify-content: space-between;
@@ -130,8 +135,8 @@ main .bet .under{
     }
 }
 
-main .bet .over:active,
-main .bet .under:active{
+main .bet .over:focus,
+main .bet .under:focus{
     background-color: rgba(255,255,255,0.5);
 }
 
@@ -152,4 +157,51 @@ main .price button{
 
 main .price button:active{
     background-color: #dbdb1b;
+}
+
+.log{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    padding: 10px;
+    display: none;
+}
+
+.log.active{
+    display: block;
+}
+
+.log p{
+    font-size: 20px;
+    font-weight: bold;
+    color: #dbdb1b;
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(255,255,255,0.5);
+}
+
+
+.log2{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    padding: 10px;
+    display: none;
+}
+
+.log2.active{
+    display: block;
+}
+
+.log2 p{
+    font-size: 20px;
+    font-weight: bold;
+    color: #dbdb1b;
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(255,255,255,0.5);
 }
