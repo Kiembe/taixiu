@@ -135,8 +135,8 @@ main .bet .under{
     }
 }
 
-main .bet .over:focus,
-main .bet .under:focus{
+main .bet .over:active,
+main .bet .under:active{
     background-color: rgba(255,255,255,0.5);
 }
 

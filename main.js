@@ -31,7 +31,7 @@ function play() {
     overTotal.innerHTML = 0
     underTotal.innerHTML = 0
     let time = 15
-    if (brArr.length > 25) {
+    if (brArr.length > 23) {
         brArr = []
     }
 
